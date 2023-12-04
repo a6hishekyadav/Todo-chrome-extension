@@ -1,39 +1,43 @@
+ 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #110000;
     width: 350px ;
 }
 
 #container{
-    background-color: #fff;
+    background-image: url('./icons/img.jpg');
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
 #new-task{
+    font-size: 20px;
     padding: 10px;
     width: calc(100% - 20px);
-    margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 5px;
     outline: none;
 }
 
 #add-task{
     padding: 10px;
     width: 100%;
-    background-color: #4caf50;
+    background-color: rgba(43, 13, 71, 0.925);
+
     color:#fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px ;
-    font-size: 15px;
+    font-size: 18px;
     transition: opacity 0.3s ease;
 }
+
+
 
 #task-list{
      margin-top: 20px;
@@ -44,14 +48,19 @@ body{
 #task-list li{
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: azure;
+
+    padding: 15px;
+    
+    background-color: rgba(9, 136, 136, 0.89);
     margin-bottom: 5px;
     border-radius: 4px;
     overflow:hidden;
+    font-size: 20px;
+    color: #f4f4f4;
 }
 
 #tasklist li span{
+   
      flex-grow: 1;
      margin-left: 10px;
      word-break: break-all;
@@ -61,13 +70,21 @@ input[type='checkbox']{
     cursor: pointer;
 }
 
+input[type='checkbox']:checked{
+    color: black;
+}
+
+
+
 button:not(#add-task){
+    background-color: rgba(36, 18, 18, 0.801);
+    color: #f4f4f4;
     margin-left: 5px;
-    padding: 5px 8px;
+    padding: 8px 8px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 button:hover{
