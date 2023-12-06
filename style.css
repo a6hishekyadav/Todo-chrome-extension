@@ -3,22 +3,27 @@ body{
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #110000;
+    background: transparent;
     width: 350px ;
 }
 
 #container{
+
     background-image: url('./icons/img.jpg');
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgb(29, 24, 24);
+    
 }
 
 #new-task{
     font-size: 20px;
     padding: 10px;
     width: calc(100% - 20px);
-    border: 1px solid #ddd;
+    background: rgb(154, 145, 163);
+    opacity: 95%;
+    color:rgb(4, 4, 68);
+    border: 1px ridge rgb(43, 13, 71);
     border-radius: 5px;
     outline: none;
 }
@@ -70,11 +75,6 @@ input[type='checkbox']{
     cursor: pointer;
 }
 
-input[type='checkbox']:checked{
-    color: black;
-}
-
-
 
 button:not(#add-task){
     background-color: rgba(36, 18, 18, 0.801);
@@ -87,7 +87,7 @@ button:not(#add-task){
     font-size: 15px;
 }
 
-button:hover{
+button:hover:{
     opacity: 0.8;    
 }
 
